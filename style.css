@@ -1,0 +1,527 @@
+/* Student Login */
+/*body{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    height: 700px;
+}
+
+ body::before{
+    content: "";
+    position: absolute;
+    background: url('./images/login_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+} */
+
+form{
+    position: relative;
+    top: 50%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+}
+
+#service-img{
+    position: absolute;
+    top: -120px;
+    right: -70px;
+}
+
+/* End Student Login */
+
+
+/* Navbar Start*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box
+}
+
+body {
+    position: relative;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s
+}
+
+a {
+    text-decoration: none
+}
+
+.header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--white-color);
+    z-index: var(--z-fixed);
+    transition: .5s
+}
+
+.header_toggle {
+    color: var(--first-color);
+    font-size: 1.5rem;
+    cursor: pointer
+}
+
+.header_img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.header_img img {
+    width: 40px
+}
+
+.l-navbar {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--first-color);
+    padding: .5rem 1rem 0 0;
+    transition: .5s;
+    z-index: var(--z-fixed)
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.nav_logo,
+.nav_link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+    padding: .5rem 0 .5rem 1.5rem
+}
+
+.nav_logo {
+    margin-bottom: 2rem
+}
+
+.nav_logo-icon {
+    font-size: 1.25rem;
+    color: var(--white-color)
+}
+
+.nav_logo-name {
+    color: var(--white-color);
+    font-weight: 700
+}
+
+.nav_link {
+    position: relative;
+    color: var(--first-color-light);
+    margin-bottom: 1.5rem;
+    transition: .3s
+}
+
+.nav_link:hover {
+    color: var(--white-color)
+}
+
+.nav_icon {
+    font-size: 1.25rem
+}
+
+.show {
+    left: 0
+}
+
+.body-pd {
+    padding-left: calc(var(--nav-width) + 1rem)
+}
+
+.active {
+    color: var(--white-color)
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: var(--white-color)
+}
+
+.height-100 {
+    height: 100vh
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-left: calc(var(--nav-width) + 2rem)
+    }
+
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
+    }
+
+    .header_img {
+        width: 40px;
+        height: 40px
+    }
+
+    .header_img img {
+        width: 45px
+    }
+
+    .l-navbar {
+        left: 0;
+        padding: 1rem 1rem 0 0
+    }
+
+    .show {
+        width: calc(var(--nav-width) + 156px)
+    }
+
+    .body-pd {
+        padding-left: calc(var(--nav-width) + 188px)
+    }
+}
+
+
+
+/* Navbar End*/
+
+
+
+
+
+
+
+/* Personal profile page*/
+
+
+.personal_info_attribute{
+    font-weight: bold;
+}
+
+.personal_info_section{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.personal_info_contact_section{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.personal_info_wifi_section{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.personal_info_office_section{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* Personal profile page End*/
+
+/* Scheme of studies page */
+
+.accordion {
+	margin: auto;
+	width: 100%;
+}
+.accordion input {
+	display: none;
+}
+.box {
+	position: relative;
+	background: white;
+    height: 64px;
+    transition: all .15s ease-in-out;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+header.box {
+	background: rgb(71, 35, 217);
+	z-index: 100;
+	cursor: initial;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+}
+header .box-title {
+	margin: 0;
+	font-weight: normal;
+	font-size: 16pt;
+	color: white;
+	cursor: initial;
+}
+.box-title {
+	width: calc(100% - 40px);
+	height: 64px;
+	line-height: 64px;
+	padding: 0 20px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+.box-content {
+	width: calc(100% - 40px);
+	padding: 30px 20px;
+	font-size: 11pt;
+	color: rgba(0,0,0,.54);
+	display: none;
+}
+.box-close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+	margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+input:checked + .box .box-title {
+	border-bottom: 1px solid rgba(0,0,0,.18);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+}
+.arrows section .box-title {
+	padding-left: 44px;
+	width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+	position: absolute;
+	display: block;
+	content: '\203a';
+	font-size: 18pt;
+	left: 20px;
+	top: -2px;
+	transition: transform .15s ease-in-out;
+	color: rgba(0,0,0,.54);
+}
+input:checked + section.box .box-title:before {
+	transform: rotate(90deg);
+}
+
+
+/* Scheme of studies page End*/
+
+
+/* Enrolled Courses page */
+
+
+.enrolled-header-info{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.offered-courses-header{
+    background-color: #4723D9;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+}
+
+.previous-courses-header{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.offered-courses-content{
+    border : 2px solid rgb(71, 35, 217);
+    border-radius: 20px;
+}
+
+.detail-view-btn{
+    background-color: #4723D9;
+    padding: 10px;
+    color: white !important;
+    border-radius: 30px;
+}
+
+.teacher-name{
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+/* Enrolled Courses page End*/
+
+
+
+/* Detail View page */
+
+.lecture-head{
+    background-color: #4723D9;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.lecture-title{
+    font-weight: bold;
+}
+
+.lecture-status{
+    background-color: lightgreen;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.sessional-table-box{
+    border: 2px solid rgb(71, 35, 217);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.mid-table-box{
+    border: 2px solid rgb(71, 35, 217);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px 0px;
+}
+
+.final-table-box{
+    border: 2px solid rgb(71, 35, 217);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.total_marks{
+    background-color: #4723D9;
+    display: inline;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.detail-view-bottomImg{
+    width: 200px;
+}
+
+/* Detail View page End*/
+
+
+/* Transcript page */
+
+.transcript-header-info{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.transcript-content-box{
+    border : 2px solid rgb(71, 35, 217);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.total_sgpa{
+    background-color: #4723D9;
+    display: inline;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Transcript page End*/
+
+
+
+/* Contact page */
+
+.contact-box{
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid #4723D9;
+}
+
+.contact-box .user-img img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.link{
+    cursor: pointer;
+}
+
+/* Contact page End*/
